@@ -1,0 +1,10 @@
+1. Copy https://commons.wikimedia.org/wiki/File:Simple_crown_icon.svg
+
+2. Change the fill color
+For most of them, I used Seashore to get the RGB of a relatively bright pixel in the portrait frame.
+
+3. SVG -> PNG
+https://cloudconvert.com/
+
+4. PNG -> TGA
+mogrify -format tga *.png

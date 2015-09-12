@@ -1,0 +1,18 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+# Decisions
+recompute_heir_traits_decision;Recompute heir traits;;;;;;;;;x
+recompute_heir_traits_decision_desc;Update heir traits for all characters, immediately. (Normally happens yearly.);;;;;;;;;;;;;x
+recompute_heir_traits_decision.tooltip;This will take a few seconds.;;;;;;;;;;;;;x
+
+# Traits
+empire_heir;Empire Heir;;;;;;;;;x
+empire_heir_desc;This character will inherit an emperor-level title.;;;;;;;;;x
+kingdom_heir;Kingdom Heir;;;;;;;;;x
+kingdom_heir_desc;This character will inherit a kingdom-level title.;;;;;;;;;x
+duchy_heir;Duchy Heir;;;;;;;;;x
+duchy_heir_desc;This character will inherit a duchy-level title.;;;;;;;;;x
+county_heir;County Heir;;;;;;;;;x
+county_heir_desc;This character will inherit a county-level title.;;;;;;;;;x
+barony_heir;Barony Heir;;;;;;;;;x
+barony_heir_desc;This character will inherit a barony-level title.;;;;;;;;;x

@@ -1,0 +1,108 @@
+namespace = HeirTraits
+
+# Recompute heir trait for a character
+# Triggered by a bunch of on_actions, or by "recompute for everyone" decision
+
+character_event = {
+    id = HeirTraits.1
+
+    is_triggered_only = yes
+
+    hide_window = yes
+
+    immediate = {
+        remove_trait = empire_heir
+        remove_trait = kingdom_heir
+        remove_trait = duchy_heir
+        remove_trait = county_heir
+        remove_trait = barony_heir
+
+        if = {
+            limit = {
+                any_heir_title = {
+                    tier = emperor
+                    mercenary = no
+                    temporary = no
+                }
+            }
+            add_trait = empire_heir
+            break = yes
+        }
+
+        if = {
+            limit = {
+                any_heir_title = {
+                    tier = king
+                    mercenary = no
+                    temporary = no
+                    is_vice_royalty = no
+                }
+            }
+            add_trait = kingdom_heir
+            break = yes
+        }
+
+        if = {
+            limit = {
+                any_heir_title = {
+                    tier = duke
+                    mercenary = no
+                    temporary = no
+                    is_vice_royalty = no
+                }
+            }
+            add_trait = duchy_heir
+            break = yes
+        }
+
+        if = {
+            limit = {
+                any_heir_title = {
+                    tier = count
+                    mercenary = no
+                    temporary = no
+                }
+            }
+            add_trait = county_heir
+            break = yes
+        }
+
+        if = {
+            limit = {
+                any_heir_title = {
+                    tier = baron
+                }
+            }
+            add_trait = barony_heir
+            break = yes
+        }
+    }
+}
+
+
+# Recompute heir traits for close relatives (as an approximation)
+# Triggered by some on_actions
+
+character_event = {
+    id = HeirTraits.2
+    is_triggered_only = yes
+    hide_window = yes
+    immediate = {
+        # NB: `any_close_relative' only works in triggers, not in effects.
+        father = {
+            character_event = { id = HeirTraits.1 }
+        }
+        mother = {
+            character_event = { id = HeirTraits.1 }
+        }
+        any_sibling = {
+            character_event = { id = HeirTraits.1 }
+        }
+        any_child = {
+            character_event = { id = HeirTraits.1 }
+            any_child = {
+                character_event = { id = HeirTraits.1 }
+            }
+        }
+    }
+}

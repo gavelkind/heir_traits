@@ -1,0 +1,58 @@
+# Recompute heir traits for each character on startup and yearly
+
+on_startup = {
+    events = {
+        HeirTraits.1
+    }
+}
+
+on_yearly_pulse = {
+    events = {
+        HeirTraits.1
+    }
+}
+
+
+# Recompute heir traits for self (#1) and close family members (#2) on important life changes
+
+on_post_birth = {
+    events = {
+        HeirTraits.1
+        HeirTraits.2
+    }
+}
+
+on_forced_consort = {
+    events = {
+        HeirTraits.1
+        HeirTraits.2
+    }
+}
+
+on_new_holder = {
+    events = {
+        HeirTraits.1
+        HeirTraits.2
+    }
+}
+
+on_new_holder_inheritance = {
+    events = {
+        HeirTraits.1
+        HeirTraits.2
+    }
+}
+
+on_new_holder_usurpation = {
+    events = {
+        HeirTraits.1
+        HeirTraits.2
+    }
+}
+
+on_death = {
+    events = {
+        HeirTraits.1  # no longer heir if dead?
+        HeirTraits.2
+    }
+}

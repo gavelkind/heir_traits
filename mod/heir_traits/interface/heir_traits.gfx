@@ -1,0 +1,43 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_trait_empire_heir"
+        texturefile = "gfx/traits/empire_heir.tga"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+
+    spriteType = {
+        name = "GFX_trait_kingdom_heir"
+        texturefile = "gfx/traits/kingdom_heir.tga"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+
+    spriteType = {
+        name = "GFX_trait_duchy_heir"
+        texturefile = "gfx/traits/duchy_heir.tga"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+
+    spriteType = {
+        name = "GFX_trait_county_heir"
+        texturefile = "gfx/traits/county_heir.tga"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+
+    spriteType = {
+        name = "GFX_trait_barony_heir"
+        texturefile = "gfx/traits/barony_heir.tga"
+        noOfFrames = 1
+        norefcount = yes
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+
+}

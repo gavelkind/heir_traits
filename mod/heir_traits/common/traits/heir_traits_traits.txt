@@ -1,0 +1,24 @@
+empire_heir = {
+    customizer = no
+    random = no
+}
+
+kingdom_heir = {
+    customizer = no
+    random = no
+}
+
+duchy_heir = {
+    customizer = no
+    random = no
+}
+
+county_heir = {
+    customizer = no
+    random = no
+}
+
+barony_heir = {
+    customizer = no
+    random = no
+}
